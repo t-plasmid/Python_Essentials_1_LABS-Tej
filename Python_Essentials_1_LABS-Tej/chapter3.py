@@ -188,7 +188,7 @@ del hat_list[4] # Remove the last element from the list.
 print(len(hat_list)) # Print the length of the existing list.
 print(hat_list) # Print the existing list.
 
-# 3.4.1.13 LAB: The basics of lists *********** (LAB  12) ***********
+# 3.4.1.13 LAB: The basics of lists *********** (LAB  13) ***********
 # Description: This LAB  creates and modifies a simple list and then modifies the list using methods such as append() and insert() and del instruction.
 beatles = [] # Create an empty list named beatles.
 print("Step 1:", beatles)
@@ -225,7 +225,7 @@ print("Step 5:", beatles)
 
 print("The Fab", len(beatles)) # Testing list legth
 
-# 3.6.1.9 LAB: Operating with lists - basics *********** (LAB  13) ***********
+# 3.6.1.9 LAB: Operating with lists - basics *********** (LAB  14) ***********
 # Description: This LAB  asks the user to input a list and generates another list with a unique element only.
 user_input = input("To use the default list, please Enter; otherwise, please enter a list. (Example: 1,22,22,3):") # Prompt the user to input a list. If the user does not provide a list the default list will be used.
 my_list = [] # Create an empty list to store a list
