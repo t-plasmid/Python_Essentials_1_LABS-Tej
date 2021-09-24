@@ -261,7 +261,7 @@ print(my_list)
 
 # AdditionalListLAB: Tic-Tac-Toe Game *********** (LAB  15) ***********
 # Description: Given below is the code for a Tic-Tac-Toe game.
-loop_infinitely = keep_playing_game = no_row_entry = no_column_entry = no_sign_entry = True # Initialise all the boolean variables to True.
+loop_infinitely = keep_playing_game = True # Initialise all the boolean variables to True.
 board = [["-" for row in range(3)] for column in range(3)] # Create a 3x3 two-dimensional list for the tic-tac-toe game.
 while loop_infinitely: # While loop_infinitely is True, loop infinitely.
     no_row_entry = no_column_entry = no_sign_entry = True # When the while loop starts, initialise all the boolean variables to True.
