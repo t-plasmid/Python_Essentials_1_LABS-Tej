@@ -1,6 +1,6 @@
 # Author: Sgt Tej Kumar Rai
 # Date Modified: 22/09/2021
-# Date Last Modified: 23/09/2021
+# Date Last Modified: 24/09/2021
 # Description: This source file contains all the labs from Chapter 2 of Pthon Essentils 1 module.
 # The topics covered within this chapter are data types, variables, basic input-output operations and basic operators.
 
@@ -133,4 +133,3 @@ end_mins = (mins + dura) % 60 # Returns remainder which is always less than 60 m
 
 print(end_hour, end_mins, sep=":") # Prints output in the format hh:mm
 print() # Print a new line
-
