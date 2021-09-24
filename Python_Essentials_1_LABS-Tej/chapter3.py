@@ -1,6 +1,6 @@
 # Author: Sgt Tej Kumar Rai
 # Date Created: 22/09/2021
-# Date Last Modified: 23/09/2021
+# Date Last Modified: 24/09/2021
 # Description: This source file contains all the labs from Chapter 3 of Pthon Essentils 1 module.
 # # The topics covered within this chapter are Boolean Values, Conditional Execution, Loops, Lists and List Processing, Logical and Bitwise Operations
 
