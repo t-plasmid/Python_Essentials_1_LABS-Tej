@@ -258,3 +258,26 @@ while duplicate_item_present: # While loop iterates infinitely until the conditi
                 duplicate_item_present = False
 print("The list with unique elements only:")
 print(my_list)
+
+# AdditionalListLAB: Tic-Tac-Toe Game *********** (LAB  15) ***********
+# Description: Given below is the code for a Tic-Tac-Toe game.
+loop_infinitely = keep_playing_game = no_row_entry = no_column_entry = no_sign_entry = True # Initialise all the boolean variables to True.
+board = [["-" for row in range(3)] for column in range(3)] # Create a 3x3 two-dimensional list for the tic-tac-toe game.
+while loop_infinitely: # While loop_infinitely is True, loop infinitely.
+    no_row_entry = no_column_entry = no_sign_entry = True # When the while loop starts, initialise all the boolean variables to True.
+    print("\nCurrent Board:")
+    for i in range(3): print(board[i]) # Print rows on the terminal using the board list iteratively.
+    if keep_playing_game: # The if-block gets executed when the keep_playing_game variable is True.
+        while no_row_entry: # While no_row_entry is True, loop infinitely.
+            try: user_row_entry = int(input("Enter row number[1-3]:")) # Ask the user to input row number between 1 and 3. Catch non-integer entry.         
+            except: continue # If a non-integer entry is detected, ask the user to enter the row number again.
+            if user_row_entry <= 3 and user_row_entry >= 1: no_row_entry = False  # Check if the row number entered by the user is between 1 and 3. If not, ask the user to enter again.
+        while no_column_entry: # While no_column_entry is True, loop infinitely.
+            try: user_column_entry = int(input("Enter column number[1-3]:")) # Ask the user to input column number between 1 and 3. Catch non-integer entry.
+            except: continue # If a non-integer entry is detected, ask the user to enter the column number again.
+            if user_column_entry <= 3 and user_column_entry >= 1: no_column_entry = False  # Check if the column number entered by the user is between 1 and 3. If not, ask the user to enter again.
+        while no_sign_entry: # While no_sign_entry is True, loop infinitely.
+            user_sign = input("Enter 'o' or 'x' ('q' to quit):" ) # Ask the user to select between signs 'o' and 'x'. Also, accept instruction 'q' for quit.
+            if user_sign == 'o' or user_sign == 'x': no_sign_entry = False # no_sign_entry becomes False once the user selects a sign.
+            if user_sign == 'q': keep_playing_game = no_sign_entry = loop_infinitely = False # no_sign_entry and loop_infinitely becomes False if the user inputs 'q'
+    if board[user_row_entry - 1][user_column_entry - 1] != 'o' and 'x': board[user_row_entry - 1][user_column_entry - 1] = user_sign # In the user-specified row and column, assign the sign specified by the user if no previous sign entry is detected.

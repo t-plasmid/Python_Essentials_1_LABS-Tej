@@ -133,3 +133,4 @@ end_mins = (mins + dura) % 60 # Returns remainder which is always less than 60 m
 
 print(end_hour, end_mins, sep=":") # Prints output in the format hh:mm
 print() # Print a new line
+
