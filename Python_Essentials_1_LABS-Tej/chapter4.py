@@ -2,7 +2,7 @@
 # Date Created: 27/09/2021
 # Date Last Modified: 27/09/2021
 # Description: This source file contains all the labs from Chapter 4 of Pthon Essentils 1 module.
-# # The topics covered within this chapter are Functions
+# # The topics covered within this chapter are Functions, Tuples, Dictionaries and Data Processing.
 
 # 4.3.1.6 LAB: A leap year: writing your own functions *********** (LAB 1) ***********
 # Description: This LAB passes each test year in the test_data list to the function as an argument, which then determines whether or not the year is a leap year.
