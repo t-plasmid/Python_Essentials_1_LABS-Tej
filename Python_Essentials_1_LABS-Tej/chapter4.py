@@ -47,11 +47,11 @@ for i in range(len(test_years)): # Iterate through each element of the test_year
 # Description: This LAB determines whether or not the supplied integer is a prime number.
 # The number is displayed to the terminal if it is a prime number.
 def is_prime(num): # Create a one-parameter function.
-    if num == 2: return True # Return True is the argument passed to the function is 2.
-    elif num > 2: # If the argument passed to the function is greater than true execute the elif block.
-        for i in range(2, num): # Iterate from 2 to (num - 1) inclusive.
-            if num % i == 0: return False # If num is divisible by i return False. In otherwords, the argument passed to the function is not a prime number.
-            else: return True # Otherwise, it's a prime number.
+    if num <= 1: return False # Return False if the variable num is less than 1
+    for i in range(2, num): # Iterate from 2 to (num - 1) inclusive.
+    ### for i in range(2, int(num ** 0.5) + 1): ### Alternatively using square root
+        if num % i == 0: return False # If num is divisible by i return False. In otherwords, the argument passed to the function is not a prime number.
+    return True # Otherwise, it's a prime number.
 
 for i in range(1, 20): # Iterate from 1 to 19 inclusive.
 	if is_prime(i + 1): print(i + 1, end=" ") # Print all the prime numbers
