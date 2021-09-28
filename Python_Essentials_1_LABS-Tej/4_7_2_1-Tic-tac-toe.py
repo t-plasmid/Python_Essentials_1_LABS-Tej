@@ -1,14 +1,19 @@
+# Author: Sgt Tej Kumar Rai
+# Date Created: 28/09/2021
+# Date Last Modified: 29/09/2021
+# Description: The final project - Tic-Tac-Toe game.
+
 from random import randrange
 
-current_status = [[(1,1), (1,2), (1,3)], [(2,1), "X", (2,3)], [(3,1), (3,2), (3,3)]]
+current_board_status = [[(1,1), (1,2), (1,3)], [(2,1), "X", (2,3)], [(3,1), (3,2), (3,3)]]
 
 def start_game():
     # This function initiates the game.
     print("Welcome to the Tic-Tac-Toe game!\n\n")
     user_input = input("In the game, your move will be represented by the letter 'O,' \nwhile the computer's move will be represented by the letter 'X.' \n\n Please press enter to continue...")
     if user_input == "":
-        display_board(current_status)
-        enter_move(current_status)
+        display_board(current_board_status)
+        enter_move(current_board_status)
 
 def display_board(board):
     # This function accepts one parameter containing the board's current status and prints the current board to the console.    
@@ -56,11 +61,11 @@ def enter_move(board):
                 print("Invalid entry!")
                 wait_for_user_move = True
 
-    if user_input != 0: display_board(current_status)
-    if (victory_for(current_status, "O")): print("You won!")
+    if user_input != 0: display_board(current_board_status)
+    if (victory_for(current_board_status, "O")): print("You won!")
     else:
-        if (make_list_of_free_fields(current_status) > 0): 
-            if user_input != 0: draw_move(current_status)
+        if (make_list_of_free_fields(current_board_status) > 0): 
+            if user_input != 0: draw_move(current_board_status)
         else: print("Draw!")
 
 def make_list_of_free_fields(board):
@@ -101,10 +106,10 @@ def draw_move(board):
             else: wait_for_computer_move = True  
             
     print("Computer's move [1 - 9]:", computer_input)
-    display_board(current_status)
-    if (victory_for(current_status, "X")): print("Computer won!")
+    display_board(current_board_status)
+    if (victory_for(current_board_status, "X")): print("Computer won!")
     else:
-        if (make_list_of_free_fields(current_status) > 0): enter_move(current_status)
+        if (make_list_of_free_fields(current_board_status) > 0): enter_move(current_board_status)
         else: print("Draw!")
 
 start_game() # Entry point for the game.
